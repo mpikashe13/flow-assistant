@@ -29,12 +29,9 @@ export function ChatPanel() {
     setInput("");
     setLoading(true);
     try {
+      const history = messages.slice(1); // drop the initial greeting
       const res = await generateAI({
-        data: {
-          kind: "chat",
-          input: text,
-          history: messages.filter(m => m.role !== "assistant" || messages.indexOf(m) > 0),
-        },
+        data: { kind: "chat", input: text, history },
       });
       setMessages([...next, { role: "assistant", content: res.content }]);
     } catch (e: any) { toast.error(e.message); }
