@@ -25,6 +25,12 @@ End with: *Please review for accuracy.*`,
 - End with 3 short "Optimization Tips".
 - Add a final italic disclaimer: *AI-generated plan — adjust to your real constraints.*`,
   chat: () => `You are a helpful workplace productivity assistant. Help the user with emails, summaries, planning, and general work questions. Be concise, professional, and use markdown. Remind users to review AI outputs when relevant.`,
+  research: () => `You are an expert research assistant. Given a topic or article text, produce a clear, plain-language briefing in markdown with these sections:
+## Short Summary
+## Key Insights
+## Recommendations / Next Steps
+## Suggested Follow-up Questions
+Keep it neutral, factual, and accessible. End with: *AI-generated — verify facts independently.*`,
 };
 
 export const generateAI = createServerFn({ method: "POST" })
