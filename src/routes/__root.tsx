@@ -39,10 +39,14 @@ export const Route = createRootRoute({
       { name: "description", content: "AI-powered emails, meeting summaries, task planning, research and a chatbot assistant — all in one polished workspace." },
       { name: "author", content: "SmartFlow AI" },
       { property: "og:title", content: "SmartFlow AI — Workplace Productivity Assistant" },
-      { property: "og:description", content: "AI-powered emails, summaries, planning and research." },
+      { property: "og:description", content: "AI-powered emails, meeting summaries, task planning, research and a chatbot assistant — all in one polished workspace." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "SmartFlow AI — Workplace Productivity Assistant" },
+      { name: "twitter:description", content: "AI-powered emails, meeting summaries, task planning, research and a chatbot assistant — all in one polished workspace." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f8a7b8a2-07ec-4ace-982f-c8342b9eb077/id-preview-88f0bc09--a0ae1726-1750-4c63-87b4-12b410e1b9d8.lovable.app-1778147276062.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f8a7b8a2-07ec-4ace-982f-c8342b9eb077/id-preview-88f0bc09--a0ae1726-1750-4c63-87b4-12b410e1b9d8.lovable.app-1778147276062.png" },
     ],
     links: [
       {
